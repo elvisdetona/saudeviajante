@@ -6,12 +6,113 @@
     <link rel="stylesheet" href="css/saude.css">
 </head>
 <body>
+
+    <style type="text/css">
+        .master{
+            position: relative;
+            height: 200px;
+            background-color: cyan;
+
+        }
+        .nivel{
+            width: 100px;
+            position: absolute;
+            top: 0;
+            left: 100px;
+        }
+        .nivel-1{
+            left: 0px;
+        }
+
+        .nivel > li{
+            border-bottom: 1px solid gray;
+            cursor: pointer;
+        }
+        .nivel-1 > li{
+            background-color: red;
+        }
+        .nivel-2 > li{
+            background-color: blue;
+        }
+        .nivel-3 > li{
+            background-color: green;
+        }
+        .nivel-box > li{
+            background-color: yellow;
+        }
+        .box{
+            background-color: black;
+            color: white;
+        }
+    </style>
+
+    <div id="master" class="master">
+        <ul class="nivel nivel-1">
+            <li>A
+                <ul class="nivel nivel-2">
+                    <li>A1</li>
+                    <li>A2
+                        <ul class="nivel nivel-3">
+                            <li>A.A2.1</li>
+                            <li>A.A2.2</li>
+                            <li>A.A2.3
+                                <ul class="nivel nivel-box">
+                                    <li>
+                                        <div class="box">xxx A.A2.3</div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>A.A2.4
+                                <ul class="nivel nivel-box">
+                                    <li>
+                                        <div class="box">xxx A.A2.4</div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>A3
+                        <ul class="nivel nivel-3">
+                            <li>A.A3.1</li>
+                            <li>A.A3.2</li>
+                            <li>A.A3.3
+                                <ul class="nivel nivel-box">
+                                    <li>
+                                        <div class="box">
+                                            <a class="abrecriterios" href="#box-criterios">awesome 3!!!</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>A.A3.4
+                                <ul class="nivel nivel-box">
+                                    <li>
+                                        <div class="box">
+                                            <a class="abrecriterios" href="#box-criterios">awesome 4!!</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>B</li>
+            <li>C</li>
+        </ul>
+    </div>
+
+
+
+
     <div id="saudeviajante">
         <h2>Guia de Saúde do Viajante</h2>
         <p>Selecione uma região para consultar o risco saúde de uma localidade.</p>
         <div class="navegasaude">
+
             <ul>
-                <li><a href="#" rel="0" class="init">África</a>
+                <li>
+                    <a href="#" rel="0" class="init">África</a>
                     <div class="sub">
                         <ul>
                             <li><a href="#" rel="0">GUINEA</a>
@@ -1672,6 +1773,36 @@
 
     <script type="text/javascript">
     $(document).ready(function(){
+
+        // Ulala stuff
+        $('div#master').find('.nivel-2, .nivel-3, .nivel-box, .box-criterios').hide();
+        $lis = $('.nivel > li');
+        $lis.on('click.saude',function(ev){
+            ev.stopPropagation();
+            $self = $(this);
+            $lis.removeClass('on');
+            $self.addClass('on');
+            $ul = $self.find('ul:eq(0)');
+            $ul.addClass('tmp');
+            $self.parent().find('li > ul:not(.tmp)').fadeOut(300,function(){ $ul.removeClass('tmp'); }).removeClass('ativo');
+
+            ($ul.hasClass('ativo'))
+            ? $ul.fadeOut(300,function(){ $ul.removeClass('ativo'); })
+            : $ul.fadeIn(300,function(){ $ul.addClass('ativo'); });
+
+            $boxCriterios.fadeOut();
+        });
+
+        $boxCriterios = $('.box-criterios');
+        $('a.abrecriterios').on('click.criterios',function(ev){
+            ev.preventDefault();
+            ev.stopPropagation();
+            $boxCriterios.fadeIn();
+        });
+
+
+
+
         $(".box-criterios, .pontuacao, .sub, .subsub").hide();
 
         $('.navegasaude ul li a.init').click(function (e) {
