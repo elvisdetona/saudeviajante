@@ -1,0 +1,169 @@
+* {
+    margin:0;
+    padding: 0;
+    list-style-type: none;
+    outline: none;
+    text-decoration: none;
+}
+h2 {
+
+    color: #007e7a;
+    font-family: Arial, Sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+p {
+    color: #747678;
+    font-family: Arial, Sans-serif;
+    font-size: 12px;
+}
+
+.navegasaude {
+    position: relative;
+    width: 738px;
+    height: 430px;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.navegasaude ul li a {
+    width: 135px;
+    height: 35px;
+    display: block;
+    background-color:#f4f4f4;
+    border-bottom: 1px solid #d5d5d5;
+    color: #838383;
+    padding-left: 50px;
+    padding-top: 20px;
+    font-family: Arial, Sans-serif;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.navegasaude ul li a:hover, .navegasaude ul li a.active {
+   background-color: #e8e8e8;
+}
+.navegasaude ul li div.sub {
+    position: absolute;
+    width: 185px;
+    left: 186px;
+    top: 0;
+    display: block;
+    background: green;
+}
+.navegasaude ul li div.sub ul li a {
+    height: 16px;
+    padding: 8px 12px;
+    width: 161px;
+    font-family: CaeciliaLTStd-Roman, Georgia, Verdana, Arial;
+    font-size: 13px;
+}
+
+.navegasaude ul li div.subsub {
+    position: absolute;
+    width: 185px;
+    left: 186px;
+    top: 0;
+    display: block;
+    background: red;
+}
+
+
+.pontuacao {
+    width: 190px;
+    height: 400px;
+    display: block;
+    background-color: #ffffff;
+    border: 1px solid #e2e2e2;
+    padding: 25px;
+    position: absolute;
+    top: -10px;
+    right: -180px;
+    text-align: center;
+}
+.pontuacao h3{
+    color: #333333;
+    font-size: 18px;
+    font-weight: normal;
+    width: 100%;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #e2e2e2;
+    font-family: CaeciliaLTStd-Roman, Georgia, Verdana, Arial;
+ }
+
+.pontuacao p{
+    font-size: 14px;
+    color: #333333;
+    font-weight: bold;
+ }
+ .pontuacao span{
+    font-size: 12px;
+    color: #9a9a9a;
+    font-family: Arial, Sans-serif;
+    margin-top: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #e2e2e2;
+    width: 100%;
+    display: block;
+ }
+
+
+ .pontuacao p.number{ 
+    font-size: 70px;
+ }
+
+.pontuacao a.abrecriterios, 
+.pontuacao a.voltar 
+ {
+    color: #ffffff;
+    display: block;
+    width: 156px;
+    height: 30px;
+    background-color: #008f84;
+    border:1px solid #01524c;
+    font-family: Arial, Sans-serif !important;
+    font-size: 12px;
+    text-transform: none;
+    margin-bottom: 15px;
+}
+.pontuacao a:hover {
+    background-color: #008f84 !important;
+    text-decoration: underline;
+}
+
+
+.box-criterios {
+    position: relative;
+    width: 736px;
+    display: table;
+    border:1px solid #e2e2e2;
+    background-color: #f2f2f2;
+}
+.box-criterios h3 {
+    width: 686px;
+    height: 20px;
+    display: block;
+    background: #cccccc;
+    color: #333333;
+    font-size: 18px;
+    padding:12px 25px;
+    font-family: CaeciliaLTStd-Roman, Georgia, Verdana, Arial;
+    border-bottom: 1px dashed #ffffff;
+}
+.conteudo-criterios {
+    width: 180px;
+    float: left;
+    height: 200px;
+    display: block;
+    padding: 20px 30px;
+}
+.conteudo-criterios h4{
+    font-family: Arial, Sans-serif;
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+
