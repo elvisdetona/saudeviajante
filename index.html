@@ -7,46 +7,9 @@
 </head>
 <body>
 
-    <style type="text/css">
-        .master{
-            position: relative;
-            height: 200px;
-            background-color: cyan;
+    
 
-        }
-        .nivel{
-            width: 100px;
-            position: absolute;
-            top: 0;
-            left: 100px;
-        }
-        .nivel-1{
-            left: 0px;
-        }
-
-        .nivel > li{
-            border-bottom: 1px solid gray;
-            cursor: pointer;
-        }
-        .nivel-1 > li{
-            background-color: red;
-        }
-        .nivel-2 > li{
-            background-color: blue;
-        }
-        .nivel-3 > li{
-            background-color: green;
-        }
-        .nivel-box > li{
-            background-color: yellow;
-        }
-        .box{
-            background-color: black;
-            color: white;
-        }
-    </style>
-
-    <div id="master" class="master">
+    <div id="master" class="navegasaude">
         <ul class="nivel nivel-1">
             <li>A
                 <ul class="nivel nivel-2">
@@ -110,48 +73,60 @@
         <p>Selecione uma região para consultar o risco saúde de uma localidade.</p>
         <div class="navegasaude">
 
-            <ul>
+            <ul class="nivel nivel-1">
                 <li>
-                    <a href="#" rel="0" class="init">África</a>
-                    <div class="sub">
-                        <ul>
-                            <li><a href="#" rel="0">GUINEA</a>
-                                <div class="subsub">
+                   África
+                  
+                        <ul class="nivel nivel-2">
+                            <li>GUINEA
+                               
                                     <ul>
-                                        <li><a href="#" class="issa">Simandou</a>
-                                            <div class="pontuacao">
-                                                <h3>Simandou</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">17</p>
-                                                <p>Extreme</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
+                                        <li>Simandou
+                                             <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Simandou</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">17</p>
+                                                        <p>Extreme</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </li>
-                                        <li><a href="#" class="issa">Kerouane</a>
-                                            <div class="pontuacao">
-                                                <h3>Kerouane</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">17</p>
-                                                <p>Extreme</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
+                                        <li>Kerouane
+                                             <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Kerouane</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">17</p>
+                                                        <p>Extreme</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </li>
-                                        <li><a href="#" class="issa">Nzérékoré</a>
-                                            <div class="pontuacao">
-                                                <h3>Nzérékoré</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">17</p>
-                                                <p>Extreme</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
+                                        <li>Nzérékoré
+                                             <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Nzérékoré</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">17</p>
+                                                        <p>Extreme</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </li>
-                                        <li><a href="#" class="issa">Conakri</a>
+                                        <li>Conakri
                                             <div class="pontuacao">
                                                 <h3>Conakri</h3>
                                                 <p><strong>Risco da região</strong></p>
@@ -162,174 +137,216 @@
                                                 <a href="#" class="voltar">Voltar</a>
                                             </div>
                                         </li>
-                                        <li><a href="#" class="issa">Zogota</a>
-                                            <div class="pontuacao">
-                                                <h3>Zogota</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">17</p>
-                                                <p>Extreme</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
+                                        <li>Zogota
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Zogota</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">17</p>
+                                                        <p>Extreme</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </li>
                                     </ul>
-                                </div>
+                               
                             </li>
-                            <li><a href="#" rel="1">MOZAMBIQUE</a>
-                                <div class="subsub">
+                            <li>MOZAMBIQUE                               
                                     <ul>
-                                        <li><a href="#" class="issa">Maputo</a>
-                                            <div class="pontuacao">
-                                                <h3>Maputo</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">9</p>
-                                                <p>HIGH</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
+                                        <li>Maputo
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Maputo</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">9</p>
+                                                        <p>HIGH</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </li>
-                                        <li><a href="#" class="issa">Tete</a>
-                                            <div class="pontuacao">
-                                                <h3>Tete</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">12</p>
-                                                <p>HIGH</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
+                                        <li>Tete
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Tete</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">12</p>
+                                                        <p>HIGH</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </li>
-                                        <li><a href="#">Beira</a>
-                                            <div class="pontuacao">
-                                                <h3>Beira</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">12</p>
-                                                <p>HIGH</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
+                                        <li>Beira
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Beira</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">12</p>
+                                                        <p>HIGH</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </li>
-                                        <li><a href="#">Nacala</a>
-                                            <div class="pontuacao">
-                                                <h3>Nacala</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">14</p>
-                                                <p>EXTREME</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
+                                        <li>Nacala
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Nacala</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">14</p>
+                                                        <p>EXTREME</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </li>
                                     </ul>
-                                </div>
                             </li>
-                            <li><a href="#" rel="2">MALAWI</a>
-                                <div class="subsub">
+                            <li>MALAWI
+                              
                                     <ul>
-                                        <li><a href="#">Lilongwe</a>
-                                            <div class="pontuacao">
-                                                <h3>Lilongwe</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">17</p>
-                                                <p>EXTREME</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
+                                        <li>Lilongwe
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Lilongwe</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">17</p>
+                                                        <p>EXTREME</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </li>
                                     </ul>
-                                </div>
+                            
                             </li>
                             <li><a href="#" rel="3">ZAMBIA</a>
-                                <div class="subsub">
+                       
                                     <ul>
-                                        <li><a href="#">Kabwe</a>
-                                            <div class="pontuacao">
-                                                <h3>Kabwe</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">18</p>
-                                                <p>EXTREME</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
+                                        <li>Kabwe
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Kabwe</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">18</p>
+                                                        <p>EXTREME</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </li>
                                     </ul>
-                                </div>
+                           
                             </li>
-                            <li><a href="#" rel="4">DRC</a>
-                                <div class="subsub">
+                            <li>DRC
+                        
                                     <ul>
-                                        <li><a href="#">Kinshasa</a>
-                                            <div class="pontuacao">
-                                                <h3>Kinshasa</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">18</p>
-                                                <p>EXTREME</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
+                                        <li>Kinshasa
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Kinshasa</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">18</p>
+                                                        <p>EXTREME</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </li>
                                     </ul>
-                                </div>
+                     
                             </li>
-                            <li><a href="#" rel="5">ANGOLA</a>
-                                <div class="subsub">
+                            <li>ANGOLA
+                               
                                     <ul>
-                                        <li><a href="#">Luanda</a>
-                                            <div class="pontuacao">
-                                                <h3>Luanda</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">14</p>
-                                                <p>HIGH</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
+                                        <li>Luanda
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Luanda</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">14</p>
+                                                        <p>HIGH</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </li>
                                     </ul>
-                                </div>
+                            
                             </li>
-                            <li><a href="#" rel="6">GABON</a>
-                                <div class="subsub">
+                            <li>GABON
+                        
                                     <ul>
-                                        <li><a href="#">Libreville</a>
-                                            <div class="pontuacao">
-                                                <h3>Libreville</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">14</p>
-                                                <p>HIGH</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
+                                        <li>Libreville
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Libreville</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">14</p>
+                                                        <p>HIGH</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </li>
                                     </ul>
-                                </div>
+                       
                             </li>
-                            <li><a href="#" rel="7">LIBERIA</a>
-                                <div class="subsub">
+                            <li>LIBERIA
+                      
                                     <ul>
-                                        <li><a href="#">Monrovia</a>
-                                            <div class="pontuacao">
-                                                <h3>Monrovia</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">18</p>
-                                                <p>EXTREME</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
+                                        <li>Monrovia
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Monrovia</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">18</p>
+                                                        <p>EXTREME</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </li>
                                     </ul>
-                                </div>
+                     
                             </li>
                             <li><a href="#" rel="8">ETHIOPIA</a>
-                                <div class="subsub">
+                             
                                     <ul>
                                         <li><a href="#">Addis Ababa</a>
                                             <div class="pontuacao">
@@ -343,357 +360,13 @@
                                             </div>
                                         </li>
                                     </ul>
-                                </div>
+              
                             </li>
-                            <li><a href="#" rel="9">SOUTH AF.</a>
-                                <div class="subsub">
-                                    <div class="pontuacao" style="display:block !important;">
-                                        <h3>SOUTH AF.</h3>
-                                        <p><strong>Risco da região</strong></p>
-                                        <p class="number">2</p>
-                                        <p>MODERATE</p>
-                                        <span>Risco do pais: moderação</span>
-                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                        <a href="#" class="voltar">Voltar</a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a href="#" rel="1" class="init">Américas</a>
-                    <div class="sub">
-                        <ul>
-                            <li><a href="#" rel="10">BARBADOS</a>
-                                <div class="subsub">
-                                    <ul>
-                                        <li><a href="#">Bridgetown</a>
+                            <li>SOUTH AF.
+                                    <ul class="nivel nivel-box">
+                                        <li>
                                             <div class="pontuacao">
-                                                <h3>Bridgetown</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">5</p>
-                                                <p>MODERATE</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="#" rel="11">ARGENTINA</a>
-                                <div class="subsub">
-                                    <ul>
-                                        <li><a href="#">Buenos Aires</a>
-                                            <div class="pontuacao">
-                                                <h3>Buenos Aires</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">1</p>
-                                                <p>MODERATE</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
-                                        </li>
-                                        <li><a href="#">PRC, Rio Colorado</a>
-                                            <div class="pontuacao">
-                                                <h3>PRC, Rio Colorado</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">4</p>
-                                                <p>MODERATE</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
-                                        </li>
-                                        <li><a href="#">Neuquén</a>
-                                            <div class="pontuacao">
-                                                <h3>Neuquén</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">2</p>
-                                                <p>MODERATE</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
-                                        </li>
-                                        <li><a href="#">San Nicolás</a>
-                                            <div class="pontuacao">
-                                                <h3>San Nicolás</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">1</p>
-                                                <p>MODERATE</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="#" rel="12">CHILE</a>
-                                <div class="subsub">
-                                    <ul>
-                                        <li><a href="#">Oligoceno</a>
-                                            <div class="pontuacao">
-                                                <h3>Oligoceno</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">8</p>
-                                                <p>HIGH</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
-                                        </li>
-                                        <li><a href="#">Sierra Mariposa</a>
-                                            <div class="pontuacao">
-                                                <h3>Sierra Mariposa</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">6</p>
-                                                <p>MODERATE</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
-                                        </li>
-                                        <li><a href="#">SS 67/SS89</a>
-                                            <div class="pontuacao">
-                                                <h3>SS 67/SS89</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">8</p>
-                                                <p>HIGH</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
-                                        </li>
-                                        <li><a href="#">Nemesis</a>
-                                            <div class="pontuacao">
-                                                <h3>Nemesis</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">6</p>
-                                                <p>MODERATE</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
-                                        </li>
-                                        <li><a href="#">Santiago</a>
-                                            <div class="pontuacao">
-                                                <h3>Santiago</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">4</p>
-                                                <p>MODERATE</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
-                                        </li>
-                                        <li><a href="#">Salamanca</a>
-                                            <div class="pontuacao">
-                                                <h3>Salamanca</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">4</p>
-                                                <p>MODERATE</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="#" rel="13">COLOMBIA</a>
-                                <div class="subsub">
-                                    <ul>
-                                        <li><a href="#">Barranquilla</a>
-                                            <div class="pontuacao">
-                                                <h3>Barranquilla</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">1</p>
-                                                <p>MODERATE</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
-                                        </li>
-                                        <li><a href="#">Porto Santa Marta</a>
-                                            <div class="pontuacao">
-                                                <h3>Porto Santa Marta</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">5</p>
-                                                <p>MODERATE</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
-                                        </li>
-                                        <li><a href="#">Mina Hatillo, Cesar</a>
-                                            <div class="pontuacao">
-                                                <h3>Mina Hatillo, Cesar</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">7</p>
-                                                <p>HIGH</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="#" rel="14">PARAGUAY</a>
-                                <div class="subsub">
-                                    <ul>
-                                        <li><a href="#">Asunción</a>
-                                            <div class="pontuacao">
-                                                <h3>Asunción</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">1</p>
-                                                <p>MODERATE</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="#" rel="15">PERU</a>
-                                <div class="subsub">
-                                    <ul>
-                                        <li><a href="#">Lima</a>
-                                            <div class="pontuacao">
-                                                <h3>Lima</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">3</p>
-                                                <p>MODERATE</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
-                                        </li>
-                                        <li><a href="#">Piúra</a>
-                                            <div class="pontuacao">
-                                                <h3>Piúra</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">8</p>
-                                                <p>HIGH</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
-                                        </li>
-                                        <li><a href="#">Sechura</a>
-                                            <div class="pontuacao">
-                                                <h3>Sechura</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">8</p>
-                                                <p>HIGH</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a href="#" rel="2" class="init">Ásia</a>
-                    <div class="sub">
-                        <ul>
-                            <li><a href="#" rel="16">CHINA</a>
-                                <div class="subsub">
-                                    <ul>
-                                        <li><a href="#">Shanghai</a>
-                                            <div class="pontuacao">
-                                                <h3>Shanghai</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">5</p>
-                                                <p>HIGH</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
-                                        </li>
-                                        <li><a href="#">Dalian</a>
-                                            <div class="pontuacao">
-                                                <h3>Dalian</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">7</p>
-                                                <p>HIGH</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="#" rel="17">INDIA</a>
-                                <div class="subsub">
-                                    <ul>
-                                        <li><a href="#">Gurgaon</a>
-                                            <div class="pontuacao">
-                                                <h3>Gurgaon</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">9</p>
-                                                <p>HIGH</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="#" rel="18">INDONESIA</a>
-                                <div class="subsub">
-                                    <ul>
-                                        <li><a href="#">Jakarta</a>
-                                            <div class="pontuacao">
-                                                <h3>Jakarta</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">8</p>
-                                                <p>HIGH</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
-                                        </li>
-                                        <li><a href="#">Sorowako</a>
-                                            <div class="pontuacao">
-                                                <h3>Sorowako</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">10</p>
-                                                <p>HIGH</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="#" rel="19">JAPAN</a>
-                                <div class="subsub">
-                                    <ul>
-                                        <li><a href="#">Tokyo</a>
-                                            <div class="pontuacao">
-                                                <h3>Tokyo</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">1</p>
-                                                <p>MODERATE</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
-                                        </li>
-                                        <li><a href="#">Matsusaka</a>
-                                            <div class="pontuacao">
-                                                <h3>Matsusaka</h3>
+                                                <h3>SOUTH AF.</h3>
                                                 <p><strong>Risco da região</strong></p>
                                                 <p class="number">2</p>
                                                 <p>MODERATE</p>
@@ -703,145 +376,629 @@
                                             </div>
                                         </li>
                                     </ul>
-                                </div>
                             </li>
-                            <li><a href="#" rel="20">KAZAKHSTAN</a>
-                                <div class="subsub">
+                        </ul>
+
+                </li>
+                <li>Américas
+                    
+                        <ul class="nivel nivel-2">
+                            <li>BARBADOS
+                          
                                     <ul>
-                                        <li><a href="#">Balkhash</a>
-                                            <div class="pontuacao">
-                                                <h3>Balkhash</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">11</p>
-                                                <p>HIGH</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
+                                        <li>Bridgetown
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Bridgetown</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">5</p>
+                                                        <p>MODERATE</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </li>
                                     </ul>
-                                </div>
+                   
                             </li>
-                            <li><a href="#" rel="21">MALAYSIA</a>
-                                <div class="subsub">
+                            <li>ARGENTINA
                                     <ul>
-                                        <li><a href="#">Lumut</a>
-                                            <div class="pontuacao">
-                                                <h3>Lumut</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">6</p>
-                                                <p>MODERATE</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
+                                        <li>Buenos Aires
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Buenos Aires</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">1</p>
+                                                        <p>MODERATE</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul> 
                                         </li>
-                                        <li><a href="#">Ipoh</a>
-                                            <div class="pontuacao">
-                                                <h3>Ipoh</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">6</p>
-                                                <p>MODERATE</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
+                                        <li>PRC, Rio Colorado
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>PRC, Rio Colorado</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">4</p>
+                                                        <p>MODERATE</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </li>
-                                        <li><a href="#">Kuala Lumpur</a>
-                                            <div class="pontuacao">
-                                                <h3>Kuala Lumpur</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">6</p>
-                                                <p>MODERATE</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
+                                        <li>Neuquén
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Neuquén</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">2</p>
+                                                        <p>MODERATE</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>San Nicolás
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>San Nicolás</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">1</p>
+                                                        <p>MODERATE</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </li>
                                     </ul>
-                                </div>
+             
                             </li>
-                            <li><a href="#" rel="22">PHILIPINES</a>
-                                <div class="subsub">
+                            <li>CHILE
+                       
                                     <ul>
-                                        <li><a href="#">Makati City</a>
-                                            <div class="pontuacao">
-                                                <h3>Makati City</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">6</p>
-                                                <p>MODERATE</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
+                                        <li>Oligoceno
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Oligoceno</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">8</p>
+                                                        <p>HIGH</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>Sierra Mariposa
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Sierra Mariposa</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">6</p>
+                                                        <p>MODERATE</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>SS 67/SS89
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>SS 67/SS89</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">8</p>
+                                                        <p>HIGH</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>Nemesis
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Nemesis</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">6</p>
+                                                        <p>MODERATE</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>Santiago
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Santiago</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">4</p>
+                                                        <p>MODERATE</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>Salamanca
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Salamanca</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">4</p>
+                                                        <p>MODERATE</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </li>
                                     </ul>
-                                </div>
+                     
                             </li>
-                            <li><a href="#" rel="23">SINGAPORE</a>
-                                <div class="subsub">
+                            <li>COLOMBIA
+                   
                                     <ul>
-                                        <li><a href="#">Singapore</a>
-                                            <div class="pontuacao">
-                                                <h3>Singapore</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">0</p>
-                                                <p>LOW</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
+                                        <li>Barranquilla
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Barranquilla</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">1</p>
+                                                        <p>MODERATE</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>Porto Santa Marta
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Porto Santa Marta</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">5</p>
+                                                        <p>MODERATE</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>Mina Hatillo, Cesar
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Mina Hatillo, Cesar</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">7</p>
+                                                        <p>HIGH</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </li>
                                     </ul>
-                                </div>
+
                             </li>
-                            <li><a href="#" rel="24">SOUTH KOREA</a>
-                                <div class="subsub">
+                            <li>PARAGUAY
+             
                                     <ul>
-                                        <li><a href="#">Seoul</a>
-                                             <div class="pontuacao">
-                                                <h3>Seoul</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">4</p>
-                                                <p>MODERATE</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
-                                        </li>
-                                        <li><a href="#">Unsan</a>
-                                             <div class="pontuacao">
-                                                <h3>Unsan</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">5</p>
-                                                <p>MODERATE</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
+                                        <li>Asunción
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Asunción</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">1</p>
+                                                        <p>MODERATE</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </li>
                                     </ul>
-                                </div>
+        
                             </li>
-                            <li><a href="#" rel="25">TAIWAN</a>
-                                <div class="subsub">
+                            <li>PERU
+                     
                                     <ul>
-                                        <li><a href="#">Kaoshiung</a>
-                                            <div class="pontuacao">
-                                                <h3>Kaoshiung</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">5</p>
-                                                <p>MODERATE</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
+                                        <li>Lima
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Lima</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">3</p>
+                                                        <p>MODERATE</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>Piúra
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Piúra</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">8</p>
+                                                        <p>HIGH</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li>Sechura
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Sechura</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">8</p>
+                                                        <p>HIGH</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </li>
                                     </ul>
-                                </div>
+         
                             </li>
-                            <li><a href="#" rel="26">THAILAND</a>
-                                <div class="subsub">
+                        </ul>
+
+                </li>
+                <li>Ásia
+         
+                        <ul class="nivel nivel-2">
+                            <li>CHINA
+                 
+                                    <ul>
+                                        <li>Shanghai
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Shanghai</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">5</p>
+                                                        <p>HIGH</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>Dalian
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Dalian</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">7</p>
+                                                        <p>HIGH</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+  
+                            </li>
+                            <li>INDIA
+                              
+                                    <ul>
+                                        <li>Gurgaon
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Gurgaon</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">9</p>
+                                                        <p>HIGH</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                     
+                            </li>
+                            <li>INDONESIA
+                                
+                                    <ul>
+                                        <li>Jakarta
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Jakarta</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">8</p>
+                                                        <p>HIGH</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>Sorowako
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Sorowako</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">10</p>
+                                                        <p>HIGH</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                           
+                            </li>
+                            <li>JAPAN
+                           
+                                    <ul>
+                                        <li>Tokyo
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Tokyo</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">1</p>
+                                                        <p>MODERATE</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>Matsusaka
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Matsusaka</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">2</p>
+                                                        <p>MODERATE</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                      
+                            </li>
+                            <li>KAZAKHSTAN
+                           
+                                    <ul>
+                                        <li>Balkhash
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Balkhash</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">11</p>
+                                                        <p>HIGH</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                          
+                            </li>
+                            <li>MALAYSIA
+                           
+                                    <ul>
+                                        <li>Lumut
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Lumut</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">6</p>
+                                                        <p>MODERATE</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>Ipoh
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Ipoh</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">6</p>
+                                                        <p>MODERATE</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>Kuala Lumpur
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Kuala Lumpur</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">6</p>
+                                                        <p>MODERATE</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                   
+                            </li>
+                            <li>PHILIPINES
+                            
+                                    <ul>
+                                        <li>Makati City
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Makati City</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">6</p>
+                                                        <p>MODERATE</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                   
+                            </li>
+                            <li>SINGAPORE
+                          
+                                    <ul>
+                                        <li>Singapore
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Singapore</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">0</p>
+                                                        <p>LOW</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+                                        </li>
+                                    </ul>
+                 
+                            </li>
+                            <li>SOUTH KOREA
+                                
+                                    <ul>
+                                        <li>Seoul
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                     <div class="pontuacao">
+                                                        <h3>Seoul</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">4</p>
+                                                        <p>MODERATE</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+                                        </li>
+                                        <li>Unsan
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                     <div class="pontuacao">
+                                                        <h3>Unsan</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">5</p>
+                                                        <p>MODERATE</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+ 
+                            </li>
+                            <li>TAIWAN
+                          
+                                    <ul>
+                                        <li>Kaoshiung
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Kaoshiung</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">5</p>
+                                                        <p>MODERATE</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+              
+                            </li>
+                            <li>THAILAND</a>
+                    
                                     <ul>
                                         <li><a href="#">Bangkok</a>
                                             <div class="pontuacao">
@@ -855,49 +1012,61 @@
                                             </div>
                                         </li>
                                     </ul>
-                                </div>
+         
                             </li>
                         </ul>
-                    </div>
+    
                 </li>
-                <li><a href="#" rel="3" class="init">Australasia</a>
-                    <div class="sub">
-                        <ul>
-                            <li><a href="#" rel="27">AUSTRALIA</a>
-                                <div class="subsub">
+                <li>Australasia
+                    
+                        <ul class="nivel nivel-2">
+                            <li>AUSTRALIA
+                             
                                     <ul>
-                                        <li><a href="#">Brisbane</a>
-                                            <div class="pontuacao">
-                                                <h3>Brisbane</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">0</p>
-                                                <p>LOW</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
+                                        <li>Brisbane
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Brisbane</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">0</p>
+                                                        <p>LOW</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </li>
-                                        <li><a href="#">Moura</a>
-                                            <div class="pontuacao">
-                                                <h3>Moura</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">3</p>
-                                                <p>MODERATE</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
+                                        <li>Moura
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Moura</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">3</p>
+                                                        <p>MODERATE</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </li>
-                                        <li><a href="#">Isaac Plains</a>
-                                            <div class="pontuacao">
-                                                <h3>Isaac Plains</h3>
-                                                <p><strong>Risco da região</strong></p>
-                                                <p class="number">3</p>
-                                                <p>MODERATE</p>
-                                                <span>Risco do pais: moderação</span>
-                                                <a href="#" class="abrecriterios">Critérios de avaliação</a>
-                                                <a href="#" class="voltar">Voltar</a>
-                                            </div>
+                                        <li>Isaac Plains
+                                            <ul class="nivel nivel-box">
+                                                <li>
+                                                    <div class="pontuacao">
+                                                        <h3>Isaac Plains</h3>
+                                                        <p><strong>Risco da região</strong></p>
+                                                        <p class="number">3</p>
+                                                        <p>MODERATE</p>
+                                                        <span>Risco do pais: moderação</span>
+                                                        <a href="#" class="abrecriterios">Critérios de avaliação</a>
+                                                        <a href="#" class="voltar">Voltar</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </li>
                                         <li><a href="#">Hunter Valley</a>
                                             <div class="pontuacao">
@@ -911,10 +1080,10 @@
                                             </div>
                                         </li>
                                     </ul>
-                                </div>
+                          
                             </li>
                             <li><a href="#" rel="28">NEW CALEDONIA</a>
-                                <div class="subsub">
+                            
                                     <ul>
                                         <li><a href="#">Noumea</a>
                                             <div class="pontuacao">
@@ -939,17 +1108,17 @@
                                             </div>
                                         </li>
                                     </ul>
-                                </div>
+                
                             </li>
                         </ul>
-                    </div>
+ 
                 </li>
 
                 <li><a href="#" rel="4" class="init">Brasil</a>
-                    <div class="sub">
-                        <ul>
+              
+                        <ul class="nivel nivel-2">
                             <li><a href="#" rel="29">Bahia</a>
-                                <div class="subsub">
+                     
                                     <ul>
                                         <li><a href="#">Simões Filho</a>
                                             <div class="pontuacao">
@@ -963,10 +1132,10 @@
                                             </div>
                                         </li>
                                     </ul>
-                                </div>
+                      
                             </li>
                             <li><a href="#" rel="30">Ceará</a>
-                                <div class="subsub">
+                                
                                     <ul>
                                         <li><a href="#">São Gonçalo do Amarante</a>
                                             <div class="pontuacao">
@@ -980,10 +1149,10 @@
                                             </div>
                                         </li>
                                     </ul>
-                                </div>
+                   
                             </li>
                             <li><a href="#" rel="31">ES</a>
-                                <div class="subsub">
+                             
                                     <ul>
                                         <li><a href="#">Complexo Tubarão</a>
                                             <div class="pontuacao">
@@ -997,10 +1166,10 @@
                                             </div>
                                         </li>
                                     </ul>
-                                </div>
+                     
                             </li>
                             <li><a href="#" rel="32">Goiás</a>
-                                <div class="subsub">
+                             
                                     <ul>
                                         <li><a href="#">Catalão</a>
                                             <div class="pontuacao">
@@ -1014,10 +1183,10 @@
                                             </div>
                                         </li>
                                     </ul>
-                                </div>
+                    
                             </li>
                             <li><a href="#" rel="33">Maranhão</a>
-                                <div class="subsub">
+                            
                                     <ul>
                                         <li><a href="#">São Luís (Ponta da Madeira)</a>
                                             <div class="pontuacao">
@@ -1042,10 +1211,10 @@
                                             </div>
                                         </li>
                                     </ul>
-                                </div>
+         
                             </li>
                             <li><a href="#" rel="34">Mato Grosso do Sul</a>
-                                <div class="subsub">
+           
                                     <ul>
                                         <li><a href="#">Corumbá</a>
                                             <div class="pontuacao">
@@ -1081,10 +1250,10 @@
                                             </div>
                                         </li>
                                     </ul>
-                                </div>
+              
                             </li>
                             <li><a href="#" rel="35">Minas Gerais</a>
-                                <div class="subsub">
+                          
                                     <ul>
                                         <li><a href="#">Belo Horizonte</a>
                                             <div class="pontuacao">
@@ -1230,10 +1399,10 @@
                                             </div>
                                         </li>
                                     </ul>
-                                </div>
+                  
                             </li>
                             <li><a href="#" rel="36">Pará</a>
-                                <div class="subsub">
+                      
                                     <ul>
                                         <li><a href="#">Altamira</a>
                                             <div class="pontuacao">
@@ -1390,10 +1559,10 @@
                                             </div>
                                         </li>
                                     </ul>
-                                </div>
+                
                             </li>
                             <li><a href="#" rel="37">Paraná</a>
-                                <div class="subsub">
+                            
                                     <ul>
                                         <li><a href="#">Araucária (Curitiba)</a>
                                             <div class="pontuacao">
@@ -1407,10 +1576,10 @@
                                             </div>
                                         </li>
                                     </ul>
-                                </div>
+                 
                             </li>
                             <li><a href="#" rel="38">Rio de Janeiro</a>
-                                <div class="subsub">
+                       
                                     <ul>
                                         <li><a href="#">Rio de Janeiro</a>
                                             <div class="pontuacao">
@@ -1446,10 +1615,10 @@
                                             </div>
                                         </li>
                                     </ul>
-                                </div>
+              
                             </li>
                             <li><a href="#" rel="39">Sta Catarina / R. G. Sul</a>
-                                <div class="subsub">
+                  
                                     <ul>
                                         <li><a href="#">Machadinho</a>
                                             <div class="pontuacao">
@@ -1463,10 +1632,10 @@
                                             </div>
                                         </li>
                                     </ul>
-                                </div>
+         
                             </li>
                             <li><a href="#" rel="40">São Paulo</a>
-                                <div class="subsub">
+                         
                                     <ul>
                                         <li><a href="#">São Paulo</a>
                                             <div class="pontuacao">
@@ -1513,10 +1682,10 @@
                                             </div>
                                         </li>
                                     </ul>
-                                </div>
+ 
                             </li>
                             <li><a href="#" rel="41">Sergipe</a>
-                                <div class="subsub">
+      
                                     <ul>
                                         <li><a href="#">Rosário do Catete</a>
                                             <div class="pontuacao">
@@ -1552,17 +1721,17 @@
                                             </div>
                                         </li>
                                     </ul>
-                                </div>
+
                             </li>
                         </ul>
-                    </div>
+ 
                 </li>
 
                 <li><a href="#" rel="5" class="init">Europe</a>
-                    <div class="sub">
-                        <ul>
+                  
+                        <ul class="nivel nivel-2">
                             <li><a href="#" rel="42">ENGLAND</a>
-                                <div class="subsub">
+                        
                                     <ul>
                                         <li><a href="#">London</a>
                                             <div class="pontuacao">
@@ -1587,10 +1756,10 @@
                                             </div>
                                         </li>
                                     </ul>
-                                </div>
+                 
                             </li>
                             <li><a href="#" rel="43">WALES</a>
-                                <div class="subsub">
+                      
                                     <ul>
                                         <li><a href="#">Clydach</a>
                                             <div class="pontuacao">
@@ -1604,10 +1773,10 @@
                                             </div>
                                         </li>
                                     </ul>
-                                </div>
+                    
                             </li>
                             <li><a href="#" rel="44">SWITZERLAND</a>
-                                <div class="subsub">
+                   
                                     <ul>
                                         <li><a href="#">Saint-Prex</a>
                                              <div class="pontuacao">
@@ -1621,10 +1790,10 @@
                                             </div>
                                         </li>
                                     </ul>
-                                </div>
+                 
                             </li>
                             <li><a href="#" rel="45">FRANCE</a>
-                                <div class="subsub">
+                           
                                     <ul>
                                         <li><a href="#">Dunkerque</a>
                                              <div class="pontuacao">
@@ -1638,10 +1807,10 @@
                                             </div>
                                         </li>
                                     </ul>
-                                </div>
+                      
                             </li>
                             <li><a href="#" rel="46">NORWAY</a>
-                                <div class="subsub">
+                        
                                     <ul>
                                         <li><a href="#">Mo I Rana</a>
                                              <div class="pontuacao">
@@ -1655,16 +1824,16 @@
                                             </div>
                                         </li>
                                     </ul>
-                                </div>
+                    
                             </li>
                         </ul>
-                    </div>
+           
                 </li>
                 <li><a href="#" rel="6" class="init">Middle East</a>
-                    <div class="sub">
-                        <ul>
+              
+                        <ul class="nivel nivel-2">
                             <li><a href="#" rel="47">OMAN</a>
-                                <div class="subsub">
+                        
                                     <ul>
                                         <li><a href="#">Muscat</a>
                                             <div class="pontuacao">
@@ -1689,10 +1858,10 @@
                                             </div>
                                         </li>
                                     </ul>
-                                </div>
+                         
                             </li>
                             <li><a href="#" rel="48">UNITED ARAB EMIRATES</a>
-                                <div class="subsub">
+                             
                                     <ul>
                                         <li><a href="#">Dubai</a>
                                             <div class="pontuacao">
@@ -1706,10 +1875,10 @@
                                             </div>
                                         </li>
                                     </ul>
-                                </div>
+                 
                             </li>
                         </ul>
-                    </div>
+          
                 </li>
             </ul>
         </div>
@@ -1769,10 +1938,11 @@
 
     </div>
 
-    <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 
     <script type="text/javascript">
     $(document).ready(function(){
+        $('.pontuacao').hide();
 
         // Ulala stuff
         $('div#master').find('.nivel-2, .nivel-3, .nivel-box, .box-criterios').hide();

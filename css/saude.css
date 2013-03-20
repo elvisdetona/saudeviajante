@@ -19,6 +19,13 @@ p {
     font-size: 12px;
 }
 
+.nivel{
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 100px;
+}
+
 .navegasaude {
     position: relative;
     width: 738px;
@@ -166,4 +173,32 @@ p {
     margin-bottom: 10px;
 }
 
+
+
+
+
+        .nivel-1{
+            left: 0px;
+        }
+
+        .nivel > li{
+            border-bottom: 1px solid gray;
+            cursor: pointer;
+        }
+        .nivel-1 > li{
+            background-color: red;
+        }
+        .nivel-2 > li{
+            background-color: blue;
+        }
+        .nivel-3 > li{
+            background-color: green;
+        }
+        .nivel-box > li{
+            background-color: yellow;
+        }
+        .box{
+            background-color: black;
+            color: white;
+        }
 
