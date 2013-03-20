@@ -1799,64 +1799,6 @@
             ev.stopPropagation();
             $boxCriterios.fadeIn();
         });
-
-
-
-
-        $(".box-criterios, .pontuacao, .sub, .subsub").hide();
-
-        $('.navegasaude ul li a.init').click(function (e) {
-            e = e || event;
-            e.preventDefault();
-            var idxx = $(this).attr('rel') ? $(this).attr('rel') : $(this).index();
-            if ($('ul .sub:visible').length > 0) {
-                $('ul .sub:visible').stop().fadeOut(300);
-                $('ul .subsub:visible').stop().fadeOut(300);
-                $('ul .sub:eq(' + idxx + ')').stop().delay(300).fadeIn(300);
-                } else {
-                  $('ul .sub:eq(' + idxx + ')').stop().fadeIn(300);
-
-                }
-        });
-
-        $('.sub ul li a').click(function (ef) {
-            ef = ef || event;
-            ef.preventDefault();
-            var idx = $(this).attr('rel') ? $(this).attr('rel') : $(this).index();
-
-            if ($('.subsub:visible').length > 0) {
-                $('.subsub:visible').stop().fadeOut(300);
-                $('.subsub:eq(' + idx + ')').stop().delay(300).fadeIn(300);
-                } else {
-                  $('.subsub:eq(' + idx + ')').stop().fadeIn(300);
-
-                }
-        });
-
-        /*$('.subsub ul li a').click(function () {
-            $(this).next().show();
-        });*/
-
-
-
-         $pontuacao = $(".subsub ul li a.issa");
-
-            $pontuacao
-            .click(function(e){
-                $(this).next().fadeIn(300);
-            });
-
-
-
-
-        /*$("a.abrecriterios").click(function (eee) {
-            $(".box-criterios").stop().fadeIn(300);
-       });*/
-
-
-
-
-
     });
     </script>
 
