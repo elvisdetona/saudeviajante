@@ -1,9 +1,9 @@
 Menu com conteúdo flutuante
+=============
 Saúde do viajante - Intranet Global Vale
 =============
 
-
-- Pegar todo o conteúdo que está dentro da tag <body> e aplicar na webpart padrão das seguintes urls:
+Pegar todo o conteúdo que está dentro da tag body e aplicar na webpart padrão das seguintes urls:
 
 Versão Portugues:
 http://intranet.valeglobal.net/pt-br/saudeeseguranca/saudedoviajante/Paginas/risco-das-localidades.aspx
