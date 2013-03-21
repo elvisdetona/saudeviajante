@@ -19,16 +19,17 @@ p {
     font-size: 12px;
 }
 p.init {
-    padding: 30px 30px 10px 30px;
+    padding: 23px 22px 10px 22px;
 }
 
 .navegasaude {
     position: relative;
-    width: 738px;
+    width: 731px;
     height: 430px;
     display: block;
     margin-top: 30px;
     margin-bottom: 30px;
+    background-color: #f4f4f4;
 }
 
 .navegasaude ul li:hover, .navegasaude ul li.on {
@@ -46,6 +47,7 @@ p.init {
     top: -10px;
     right: -180px;
     text-align: center;
+    box-shadow: 1px 1px 12px 4px #d5d5d5;
 }
 .pontuacao h3{
     color: #333333;
@@ -79,20 +81,20 @@ p.init {
     font-size: 70px;
  }
 
-.pontuacao a.abrecriterios, 
-.pontuacao a.voltar 
+.pontuacao a.abrecriterios
  {
     color: #ffffff;
     display: block;
     width: 156px;
-    height: 30px;
+    height: 24px;
     background-color: #008f84;
-    border:1px solid #01524c;
+    border: 1px solid #01524c;
+    border-radius: 2px;
     font-family: Arial, Sans-serif !important;
     font-size: 12px;
     text-transform: none;
-    margin:0 auto 15px auto;
-    padding-top: 20px;
+    margin: 0 auto 15px auto;
+    padding-top: 10px;
 }
 .pontuacao a:hover {
     background-color: #008f84 !important;
@@ -102,7 +104,7 @@ p.init {
 
 .box-criterios {
     position: relative;
-    width: 736px;
+    width: 729px;
     display: table;
     border:1px solid #e2e2e2;
     background-color: #f2f2f2;
@@ -114,16 +116,16 @@ p.init {
     background: #cccccc;
     color: #333333;
     font-size: 18px;
-    padding:12px 25px;
+    padding:12px 22px;
     font-family: CaeciliaLTStd-Roman, Georgia, Verdana, Arial;
     border-bottom: 1px dashed #ffffff;
 }
 .conteudo-criterios {
-    width: 180px;
+   width: 200px;
     float: left;
-    height: 180px;
+    height: 170px;
     display: block;
-    padding: 20px 30px;
+    padding: 12px 20px;
 }
 .conteudo-criterios h4{
     font-family: Arial, Sans-serif;
@@ -134,25 +136,44 @@ p.init {
 
 .nivel{
     position: absolute;
-    top: 0;
+    top: -1px;
+    border: 1px solid #e2e2e2;
 }
 
-.nivel-1{
-    width: 135px;
+.nivel-1 {
+    width: 185px;
     left: 0;
+
     
 }
 .nivel-2{
     width: 185px;
-    left: 186px;
+    left: 187px;
+
 }
 
 .nivel-3{
     width: 185px;
-    left: 186px;
+    left: 187px;
+    
 }
+
+
+.nivel-1.ativo,
+.nivel-2.ativo,
+.nivel-3.ativo { 
+    border: 1px solid #e2e2e2;
+    box-shadow: 1px 1px 12px 4px #d5d5d5;
+}
+.nivel-box .ativo { 
+    border:none;
+    box-shadow: none;
+}
+
 .nivel-box{
     width: 185px;
+    border:none;
+    box-shadow: none;
 
 }
 
@@ -160,31 +181,80 @@ p.init {
     cursor: pointer;
     border-bottom: 1px solid #d5d5d5;
     color: #838383;
-    background-color:#f4f4f4;
+    /*background-color:#f4f4f4;*/
     font-size: 13px;
     text-transform: capitalize;
     display: block;
 }
+.nivel > li:last-child{
+    border-bottom: none;
+}
+
+
 .nivel-1 > li{
     width: 135px;
     padding-left: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
     font-family: Arial, Sans-serif;
-    font-size: 15px;
+    font-size: 15px; 
+    background-repeat: no-repeat;
+    background-color:#f4f4f4;
+    background-image: url('../img/paises.png');
     
 }
+
+.nivel-1 > li.africa{ 
+       background-position: 10px 10px;
+}
+.nivel-1 > li.americas{ 
+       background-position: 10px -38px;
+}
+.nivel-1 > li.asia{ 
+       background-position: 10px -89px;
+}
+.nivel-1 > li.australia{ 
+       background-position: 10px -296px;
+}
+.nivel-1 > li.brasil{ 
+       background-position: 10px -141px;
+}
+.nivel-1 > li.europe{ 
+       background-position: 10px -192px;
+}
+.nivel-1 > li.middle{ 
+       background-position: 10px -245px;
+}
+
+
+.nivel-1.ativo > li{
+    background-color: white;
+}
+
+
 .nivel-2 > li{
     padding: 8px 12px;
     width: 161px;
     font-family: CaeciliaLTStd-Roman, Georgia, Verdana, Arial;
-    
+    background-color:#f4f4f4;
+  
 }
+.nivel-2.ativo > li{
+    background-color: white;
+
+}
+
 .nivel-3 > li{
     font-family: CaeciliaLTStd-Roman, Georgia, Verdana, Arial;
     padding: 8px 12px;
+    background-color:#f4f4f4;
 
 }
+.nivel-3.ativo > li{
+    background-color: white;
+}
+
+
 .nivel-box > li{
     border-bottom: 0;
 }
