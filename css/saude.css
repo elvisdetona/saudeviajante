@@ -18,6 +18,9 @@ p {
     font-family: Arial, Sans-serif;
     font-size: 12px;
 }
+p.init {
+    padding: 30px 30px 10px 30px;
+}
 
 .navegasaude {
     position: relative;
@@ -26,49 +29,11 @@ p {
     display: block;
     margin-top: 30px;
     margin-bottom: 30px;
-    background: yellow;
 }
-.navegasaude ul li a {
-    width: 135px;
-    height: 35px;
-    display: block;
-    background-color:#f4f4f4;
-    border-bottom: 1px solid #d5d5d5;
-    color: #838383;
-    padding-left: 50px;
-    padding-top: 20px;
-    font-family: Arial, Sans-serif;
-    font-size: 15px;
-    text-transform: capitalize;
-}
-.navegasaude ul li a:hover, .navegasaude ul li a.active {
+
+.navegasaude ul li:hover, .navegasaude ul li.on {
    background-color: #e8e8e8;
 }
-.navegasaude ul li div.sub {
-    position: absolute;
-    width: 185px;
-    left: 186px;
-    top: 0;
-    display: block;
-    background: green;
-}
-.navegasaude ul li div.sub ul li a {
-    height: 16px;
-    padding: 8px 12px;
-    width: 161px;
-    font-family: CaeciliaLTStd-Roman, Georgia, Verdana, Arial;
-    font-size: 13px;
-}
-
-.navegasaude ul li div.subsub {
-    position: absolute;
-    width: 185px;
-    left: 186px;
-    top: 0;
-    display: block;
-    background: red;
-}
-
 
 .pontuacao {
     width: 190px;
@@ -110,7 +75,6 @@ p {
     display: block;
  }
 
-
  .pontuacao p.number{ 
     font-size: 70px;
  }
@@ -127,7 +91,8 @@ p {
     font-family: Arial, Sans-serif !important;
     font-size: 12px;
     text-transform: none;
-    margin-bottom: 15px;
+    margin:0 auto 15px auto;
+    padding-top: 20px;
 }
 .pontuacao a:hover {
     background-color: #008f84 !important;
@@ -156,7 +121,7 @@ p {
 .conteudo-criterios {
     width: 180px;
     float: left;
-    height: 200px;
+    height: 180px;
     display: block;
     padding: 20px 30px;
 }
@@ -167,61 +132,59 @@ p {
     margin-bottom: 10px;
 }
 
-
-
-
 .nivel{
     position: absolute;
     top: 0;
 }
 
-        .nivel-1{
-            width: 135px;
-            left: 0;
-            
-        }
-        .nivel-2{
-            width: 185px;
-            left: 186px;
-        }
+.nivel-1{
+    width: 135px;
+    left: 0;
+    
+}
+.nivel-2{
+    width: 185px;
+    left: 186px;
+}
 
-        .nivel-3{
-            left: 0px;
-        }
-        .nivel-box{
-            left: 0px;
-        }
+.nivel-3{
+    width: 185px;
+    left: 186px;
+}
+.nivel-box{
+    width: 185px;
 
-        .nivel > li{
-            border-bottom: 1px solid gray;
-            cursor: pointer;
-        }
-        .nivel-1 > li{
-            display: block;
-            width: 135px;
-            background-color:#f4f4f4;
-            border-bottom: 1px solid #d5d5d5;
-            color: #838383;
-            padding-left: 50px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            font-family: Arial, Sans-serif;
-            font-size: 15px;
-            text-transform: capitalize;
-        }
-        .nivel-2 > li{
-            width: 185px;
-            background: green;
-        }
-        .nivel-3 > li{
-            background-color: green;
+}
 
-        }
-        .nivel-box > li{
-            background-color: yellow;
-        }
-        .box{
-            background-color: black;
-            color: white;
-        }
+.nivel > li{
+    cursor: pointer;
+    border-bottom: 1px solid #d5d5d5;
+    color: #838383;
+    background-color:#f4f4f4;
+    font-size: 13px;
+    text-transform: capitalize;
+    display: block;
+}
+.nivel-1 > li{
+    width: 135px;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Arial, Sans-serif;
+    font-size: 15px;
+    
+}
+.nivel-2 > li{
+    padding: 8px 12px;
+    width: 161px;
+    font-family: CaeciliaLTStd-Roman, Georgia, Verdana, Arial;
+    
+}
+.nivel-3 > li{
+    font-family: CaeciliaLTStd-Roman, Georgia, Verdana, Arial;
+    padding: 8px 12px;
 
+}
+.nivel-box > li{
+    border-bottom: 0;
+}
